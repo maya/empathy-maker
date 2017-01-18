@@ -1,3 +1,4 @@
+//Create 100 cards
 var names = [
   'Abby',
   'Alex',
@@ -47,6 +48,15 @@ var disabilityFlat = Object.keys(disability).map(function(key) {
   return disability[key]
 });
 
+var colors = [
+  '#F8BBCF',
+  '#C5C9E6',
+  '#B6E3EB',
+  '#DCECC8',
+  '#B5E4FA',
+  '#FBCBBD'
+]
+
 newMessage();
 function newMessage() {
   function getRandomItem(list) {
@@ -66,25 +76,22 @@ document.body.onload = addElement;
 function addElement() {
   // create a new div element
   // and give it some content
-  var newDiv = document.createElement('li');
-  newDiv.className = 'stack__item';
-  newDiv.innerHTML = newMessage(); //add the message to the newly created div.
+  var listItem = document.createElement('li');
+  listItem.className = 'stack__item';
+  var heading = document.createElement('h3');
+  heading.className = 'stack__item-text';
+  heading.innerHTML = newMessage(); //add the message to the newly created div.
+  listItem.appendChild(heading);
+  listItem.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
 
   // add the newly created element and its content into the DOM
-  var currentDiv = document.getElementById('main');
-  document.body.insertBefore(newDiv, currentDiv);
+  var list = document.getElementById('stack_yuda');
+  // document.body.insertBefore(listItem, list);
+  list.appendChild(listItem);
 }
 
-var times = 5;
+var times = 10;
 for(var i=0; i < times; i++) {
   addElement();
 }
 
-// var colors {
-//   '#F8BBCF,'
-//   '#C5C9E6,'
-//   '#B6E3EB,'
-//   '#DCECC8,'
-//   '#B5E4FA,'
-//   '#FBCBBD'
-// }

@@ -1,18 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Empathy maker</title>
- </head>
-<body>
-  <div id="main" class="container">
-    <h1>Empathy maker</h1>
-    <span id="new-message">
-      <!-- Message will display here -->
-    </span>
-    <button id="myBtn" value="Refresh" onclick="newMessage()">Refresh</button>
-  </div>
-  <script src="scripts.js"></script>
-</body>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Empathy maker | Inclusive design deck</title>
+		<meta name="description" content="Some animation ideas for stacks of cards" />
+		<meta name="keywords" content="stack, cards, effect, ui, animation, inspiration, html, css" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr-custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="codrops-header color-0">
+				<div class="codrops-links">
+				</div>
+				<h1><span>Inclusive design</span> Empathy maker</h1>
+			</header>
+			<div class="content color-1">
+				<h2 class="content__title"></h2>
+				<ul id="stack_yuda" class="stack stack--yuda">
+				</ul>
+				<div class="controls">
+<!-- 					<button class="button button--sonar button--reject" data-stack="stack_yuda"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+ -->					<button class="button button--sonar button--accept" data-stack="stack_yuda"><i class="fa fa-refresh"></i><span class="text-hidden">Accept</span></button>
+				</div>
+      </div>
+		</div><!-- /container -->
+    <script src="js/cards-content.js"></script>
+		<script src="js/classie.js"></script>
+		<!--
+		click feedback effect : see more at http://tympanus.net/codrops/2015/02/11/subtle-click-feedback-effects/
+		-->
+		<script src="js/mobilecheck.js"></script>
+		<script src="js/dynamics.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/cards.js"></script>
+	</body>
 </html>
