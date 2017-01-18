@@ -2,6 +2,12 @@
 	font-size: 34px;
 }
 
+@media screen and (max-width: 60em) {
+	.stack__item-text {
+		font-size: 26px;
+	}
+}
+
 .stack__item {
 	padding: 20px;
 }

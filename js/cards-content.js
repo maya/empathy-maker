@@ -78,7 +78,7 @@ function addElement() {
   // and give it some content
   var listItem = document.createElement('li');
   listItem.className = 'stack__item';
-  var heading = document.createElement('h3');
+  var heading = document.createElement('h2');
   heading.className = 'stack__item-text';
   heading.innerHTML = newMessage(); //add the message to the newly created div.
   listItem.appendChild(heading);

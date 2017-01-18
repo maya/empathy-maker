@@ -23,9 +23,9 @@ body {
 
 a {
 	outline: none;
-	color: #03a9f4;
-	text-decoration: none;
-}
+	color: #444;
+/*	text-decoration: none;
+*/}
 
 a:hover, a:focus {
 	color: #fff;
@@ -145,7 +145,7 @@ button:focus {
 	-webkit-align-self: stretch;
 	align-self: stretch;
 	overflow: hidden;
-	padding: 2em 2em 6em;
+	padding: 6em 2em 1em 2em;
 	width: 50%;
 	position: relative;
 	display: -webkit-flex;
@@ -239,4 +239,8 @@ button:focus {
 	.content--related {
 		font-size: 0.9em;
 	}
+}
+
+.github-link {
+	padding-top: 5em;
 }
