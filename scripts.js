@@ -75,16 +75,7 @@ function addElement() {
   document.body.insertBefore(newDiv, currentDiv);
 }
 
-var times = 5;
+var times = 100;
 for(var i=0; i < times; i++) {
   addElement();
 }
-
-// var colors {
-//   '#F8BBCF,'
-//   '#C5C9E6,'
-//   '#B6E3EB,'
-//   '#DCECC8,'
-//   '#B5E4FA,'
-//   '#FBCBBD'
-// }
