@@ -91,6 +91,10 @@
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 
+.button:focus {
+	box-shadow: 0 0 0 3px #80F8B4;
+}
+
 .button .fa {
 	pointer-events: none;
 }
