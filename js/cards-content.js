@@ -90,8 +90,7 @@ function addElement() {
   list.appendChild(listItem);
 }
 
-var times = 10;
+var times = 100;
 for(var i=0; i < times; i++) {
   addElement();
 }
-
