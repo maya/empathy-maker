@@ -21,7 +21,7 @@ var disability = {
   see: [
     'is blind',
     'has cataracts',
-    'lost hearing in one ear'
+    'is a distracted driver'
   ],
   hear: [
     'is deaf',
