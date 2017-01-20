@@ -11,29 +11,101 @@ var names = [
   'Sasha'
 ];
 
-var disability = {
-  touch: [
-    'has one arm',
-    'has an arm injury',
-    'is holding a baby'
-  ],
-  see: [
-    'is blind',
-    'has cataracts',
-    'is a distracted driver'
-  ],
-  hear: [
-    'is deaf',
-    'has an ear infection',
-    'lost hearing in one ear'
-  ],
-  speak: [
-    'is non-verbal',
-    'has laryngitis',
-    'has a heavy accent',
-    'lost her voice'
-  ]
-};
+function makeDisability(options) {
+  options.img = 'img/' + options.id + '.png';
+  // if (options.type !== TOUCH || options.type !== BLARG) {
+  //   throw Exception('type ' + options.type + ' is not valid!');
+  // }
+  return options;
+}
+
+// Physical disability senses/categories
+var TOUCH = 'touch';
+var SEE = 'see';
+var HEAR = 'hear';
+var SPEAK = 'speak';
+
+var disabilities = [
+  makeDisability({
+    id: 'one-arm',
+    type: TOUCH,
+    description: 'has one arm'
+  }),
+  makeDisability({
+    id: 'arm-injury',
+    type: TOUCH,
+    description: 'has an arm injury'
+  }),
+  makeDisability({
+    id: 'holding-baby',
+    type: TOUCH,
+    description: 'is holding a baby'
+  }),
+  makeDisability({
+    id: 'blind',
+    type: SEE,
+    description: 'is blind'
+  }),
+  makeDisability({
+    id: 'cataracts',
+    type: SEE,
+    description: 'has cataracts'
+  }),
+  makeDisability({
+    id: 'distracted-driver',
+    type: SEE,
+    description: 'is a distracted driver'
+  }),
+  makeDisability({
+    id: 'deaf',
+    type: HEAR,
+    description: 'is deaf'
+  }),
+  makeDisability({
+    id: 'ear-infection',
+    type: HEAR,
+    description: 'has an ear infection'
+  }),
+  makeDisability({
+    id: 'non-verbal',
+    type: SPEAK,
+    description: 'is non-verbal'
+  }),
+  makeDisability({
+    id: 'laryngitis',
+    type: SPEAK,
+    description: 'has laryngitis'
+  }),
+  makeDisability({
+    id: 'heavy-accent',
+    type: SPEAK,
+    description: 'has a heavy accent'
+  })
+];
+
+// var disability = {
+//   touch: [
+//     'has one arm',
+//     'has an arm injury',
+//     'is holding a baby'
+//   ],
+//   see: [
+//     'is blind',
+//     'has cataracts',
+//     'is a distracted driver'
+//   ],
+//   hear: [
+//     'is deaf',
+//     'has an ear infection',
+//     'lost hearing in one ear'
+//   ],
+//   speak: [
+//     'is non-verbal',
+//     'has laryngitis',
+//     'has a heavy accent',
+//     'lost her voice'
+//   ]
+// };
 
 var physicalContext = [
   'at home',
@@ -42,10 +114,6 @@ var physicalContext = [
   'in a car',
   'at the city center'
 ];
-
-var disabilityFlat = Object.keys(disability).map(function(key) {
-  return disability[key]
-});
 
 var colors = [
   '#F8BBCF',
@@ -56,17 +124,20 @@ var colors = [
   '#FBCBBD'
 ]
 
-newMessage();
 function newMessage() {
   function getRandomItem(list) {
     return list[Math.floor(Math.random() * list.length)];
   }
 
+  var disability = getRandomItem(disabilities);
   var message = getRandomItem(names) + ' ';
-  message += getRandomItem(getRandomItem(disabilityFlat)); // Run getRandomItem twice
+  message += disability.description; // Run getRandomItem twice
   message += ' ' + 'and is' + ' ';
   message += getRandomItem(physicalContext) + '.';
-  return message;
+  return {
+    html: message,
+    disability: disability
+  };
 }
 
 document.body.onload = addElement;
@@ -74,11 +145,17 @@ document.body.onload = addElement;
 function addElement() {
   // create a new div element
   // and give it some content
+  var message = newMessage();
   var listItem = document.createElement('li');
   listItem.className = 'stack__item';
+  var image = document.createElement('img');
+  image.className = 'stack__item-img';
+  image.src = message.disability.img;
+  listItem.appendChild(image);
   var heading = document.createElement('h2');
   heading.className = 'stack__item-text';
-  heading.innerHTML = newMessage(); // add the message to the newly created div.
+  heading.innerHTML = message.html; // add the message to the newly created div.
+
   listItem.appendChild(heading);
   listItem.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
 

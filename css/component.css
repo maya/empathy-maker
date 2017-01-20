@@ -1,15 +1,10 @@
 .stack__item-text {
-	font-size: 34px;
-}
-
-@media screen and (max-width: 60em) {
-	.stack__item-text {
-		font-size: 26px;
-	}
+	font-size: 26px;
 }
 
 .stack__item {
 	padding: 20px;
+	text-align: center;
 }
 
 .stack__item:first-child {
@@ -70,8 +65,10 @@
 }
 
 .stack__item img {
-	width: 100%;
 	display: block;
+	height: 50%;
+	margin: 0 auto;
+	/*mix-blend-mode: color-burn;*/
 	pointer-events: none;
 }
 
