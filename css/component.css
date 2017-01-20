@@ -22,7 +22,7 @@
 
 .stack__item {
 	background: #fff;
-	background-blend-mode: color-burn;
+	background-blend-mode: darken;
 	background-repeat: no-repeat;
 	background-size: auto 50%;
 	background-position-x: 50%;
