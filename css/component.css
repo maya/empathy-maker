@@ -2,35 +2,6 @@
 	font-size: 26px;
 }
 
-.stack__item {
-	padding: 20px;
-	text-align: center;
-}
-
-.stack__item:first-child {
-	background-color: #F8BBCF;
-}
-
-.stack__item:nth-child(2) {
-	background-color: #C5C9E6;
-}
-
-.stack__item:nth-child(3) {
-	background-color: #B6E3EB;
-}
-
-.stack__item:nth-child(4) {
-	background-color: #DCECC8;
-}
-
-.stack__item:nth-child(5) {
-	background-color: #B5E4FA;
-}
-
-.stack__item:nth-child(6) {
-	background-color: #FBCBBD;
-}
-
 .stack {
 	margin: 0 auto;
 	position: relative;
@@ -49,6 +20,7 @@
 	border-radius: 4px;
 	text-align: center;
 	overflow: hidden;
+	padding: 20px;
 	position: absolute;
 	opacity: 0;
 	display: -webkit-flex;
