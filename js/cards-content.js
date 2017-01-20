@@ -68,7 +68,6 @@ function newMessage() {
   message += ' ' + 'and is' + ' ';
   message += getRandomItem(physicalContext) + '.';
   return message;
-  // document.getElementById('new-message').innerHTML = message;
 }
 
 document.body.onload = addElement;
