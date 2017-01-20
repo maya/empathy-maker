@@ -1,4 +1,3 @@
-//Create 100 cards
 var names = [
   'Abby',
   'Alex',
@@ -79,7 +78,7 @@ function addElement() {
   listItem.className = 'stack__item';
   var heading = document.createElement('h2');
   heading.className = 'stack__item-text';
-  heading.innerHTML = newMessage(); //add the message to the newly created div.
+  heading.innerHTML = newMessage(); // add the message to the newly created div.
   listItem.appendChild(heading);
   listItem.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
 
@@ -89,6 +88,7 @@ function addElement() {
   list.appendChild(listItem);
 }
 
+// Create 100 cards
 var times = 100;
 for(var i=0; i < times; i++) {
   addElement();
