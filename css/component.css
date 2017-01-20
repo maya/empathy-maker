@@ -1,5 +1,12 @@
 .stack__item-text {
 	font-size: 26px;
+	margin-top: 60%;
+}
+
+@media screen and (max-width: 60em) {
+	.stack__item-text {
+		font-size: 23px;
+	}
 }
 
 .stack {
@@ -15,6 +22,11 @@
 
 .stack__item {
 	background: #fff;
+	background-blend-mode: color-burn;
+	background-repeat: no-repeat;
+	background-size: auto 50%;
+	background-position-x: 50%;
+	background-position-y: 20px;
 	height: 100%;
 	width: 100%;
 	border-radius: 4px;
@@ -34,6 +46,12 @@
 	-ms-user-select: none;
 	user-select: none;
 	pointer-events: auto;
+}
+
+@media screen and (max-width: 60em) {
+	.stack__item {
+		background-position-y: 10px;
+	}
 }
 
 .stack__item img {

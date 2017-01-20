@@ -149,16 +149,14 @@ function addElement() {
   var message = newMessage();
   var listItem = document.createElement('li');
   listItem.className = 'stack__item';
-  var image = document.createElement('img');
-  image.src = message.disability.img;
-  image.alt = '';
-  listItem.appendChild(image);
+  var imageSrc = message.disability.img;
   var heading = document.createElement('h2');
   heading.className = 'stack__item-text';
   heading.innerHTML = message.html; // add the message to the newly created div.
 
   listItem.appendChild(heading);
   listItem.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+  listItem.style.backgroundImage = 'url("' + imageSrc + '")';
 
   // add the newly created element and its content into the DOM
   var list = document.getElementById('stack_yuda');
