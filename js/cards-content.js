@@ -1,11 +1,12 @@
 var names = [
-  'Abby',
   'Alex',
   'Andy',
+  'Ariel',
+  'Carmen',
   'Charlie',
   'Drew',
-  'Jose',
-  'Maria',
+  'Jesse',
+  'Jude',
   'Micah',
   'Sam',
   'Sasha'
