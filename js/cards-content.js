@@ -149,8 +149,8 @@ function addElement() {
   var listItem = document.createElement('li');
   listItem.className = 'stack__item';
   var image = document.createElement('img');
-  image.alt = '';
   image.src = message.disability.img;
+  image.alt = '';
   listItem.appendChild(image);
   var heading = document.createElement('h2');
   heading.className = 'stack__item-text';
