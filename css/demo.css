@@ -61,7 +61,7 @@ button:focus {
 	line-height: 1;
 }
 
-.site-subheading {
+p.site-subheading {
 	font-weight: normal;
 	display: block;
 	margin: 0.5em 0 0;

@@ -1,12 +1,3 @@
-.site-subheading {
-	font-weight: normal;
-	display: block;
-	margin: 0.5em 0 0;
-	font-size: 2em;
-	letter-spacing: 0;
-	color: #fffb00;
-}
-
 .stack__item .stack__item-text {
 	display: none;
 }
