@@ -27,5 +27,11 @@
     bttn.setAttribute('data-state', 'unlocked');
   };
 
-  document.querySelector('.button--accept[data-stack = stack_yuda]').addEventListener(clickeventtype, function() { yuda.accept(buttonClickCallback.bind(this)); });
+  document.querySelector('.button--accept[data-stack = stack_yuda]').addEventListener(clickeventtype, function() {
+    yuda.accept(buttonClickCallback.bind(this));
+    // yuda.accept(document.querySelector('.stack__item--current').focus());
+  });
 })();
+
+// document.querySelector('.stack__item--current').setAttribute('aria-hidden', false);
+// document.querySelector('.stack__item--current').tabIndex = '-1';

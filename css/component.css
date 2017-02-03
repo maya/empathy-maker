@@ -1,5 +1,14 @@
+.stack__item .stack__item-text {
+	display: none;
+}
+
+.stack__item--current .stack__item-text {
+	display: block;
+}
+
 .stack__item-text {
 	font-size: 26px;
+	font-weight: bold;
 	margin-top: 60%;
 }
 

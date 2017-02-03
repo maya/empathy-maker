@@ -49,23 +49,23 @@ button:focus {
 /* Header */
 .codrops-header {
 	width: 100%;
-	padding: 2em 1em 4em;
+	padding: 2.5em 1em 4em;
 	text-align: center;
 	color: #fff;
 }
 
 .codrops-header h1 {
-	margin: 0.5em 0 0;
+	margin: 0.15em 0 0;
 	letter-spacing: -1px;
 	font-size: 4em;
 	line-height: 1;
 }
 
-.codrops-header h1 span {
+.site-subheading {
 	font-weight: normal;
 	display: block;
-	margin: 0.5em 0;
-	font-size: 50%;
+	margin: 0.5em 0 0;
+	font-size: 2em;
 	letter-spacing: 0;
 	color: #fffb00;
 }

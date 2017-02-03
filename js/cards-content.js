@@ -84,30 +84,6 @@ var disabilities = [
   })
 ];
 
-// var disability = {
-//   touch: [
-//     'has one arm',
-//     'has an arm injury',
-//     'is holding a baby'
-//   ],
-//   see: [
-//     'is blind',
-//     'has cataracts',
-//     'is a distracted driver'
-//   ],
-//   hear: [
-//     'is deaf',
-//     'has an ear infection',
-//     'lost hearing in one ear'
-//   ],
-//   speak: [
-//     'is non-verbal',
-//     'has laryngitis',
-//     'has a heavy accent',
-//     'lost her voice'
-//   ]
-// };
-
 var physicalContext = [
   'at home',
   'in the wilderness',
@@ -149,8 +125,9 @@ function addElement() {
   var message = newMessage();
   var listItem = document.createElement('li');
   listItem.className = 'stack__item';
+  // listItem.setAttribute('aria-hidden', true);
   var imageSrc = message.disability.img;
-  var heading = document.createElement('h2');
+  var heading = document.createElement('p');
   heading.className = 'stack__item-text';
   heading.innerHTML = message.html; // add the message to the newly created div.
 
