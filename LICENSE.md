@@ -1,3 +1,11 @@
+## Part of the project is licensed under Creative Commons Attribution Non Commercial-No Derivatives License (CC BY-NC-ND)
+The personas are created by Microsoft and are licensed under the [Creative Commons Attribution Non Commercial-No Derivatives License (CC BY-NC-ND)](https://creativecommons.org/licenses/by-nc-nd/3.0/).
+
+## The rest of the project is licensed under the MIT license.
+
+### Full license text for the MIT license:
+
+```
 MIT License
 
 Copyright (c) 2017 Maya Benari
@@ -19,3 +27,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
