@@ -11,4 +11,4 @@ The personas are created by Microsoft and are licensed under the [Creative Commo
 
 The rest of this project is licensed under the terms of the [MIT license](LICENSE.md#the-rest-of-the-project-is-licensed-under-the-mit-license).		
 
-Attribution and licensing information are described in detail in [LICENSE.md](LICENSE.md).
+Attribution and licensing information are described in detail in the [LICENSE](LICENSE.md) file.
